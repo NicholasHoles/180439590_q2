@@ -1,0 +1,72 @@
+.images {
+  border-radius: 6px;
+  width: 500px;
+}
+
+.black_slide > .title{
+  background-color: #000000;
+  border-radius: 6px;
+}
+
+.white_slide > .title{
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  color: #000000;
+}
+
+.red_slide > .title{
+  background-color: #B22222;
+  border-radius: 6px;
+}
+
+.green_slide > .title{
+  background-color: #4d7e65;
+  border-radius: 6px;
+}
+
+.black_words {
+  color: #000000;
+}
+
+.snowboarding {
+  color: #000000;
+  font-size: 58px;
+  font-weight: bold;
+}
+
+.streetwear {
+  color: #000000;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.title {
+  float: left;
+  width: 20%;
+  position: absolute;
+  display: flex;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.text {
+  float: right;
+  width: 80%;
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .title{
+    width: 100%;
+    display: block;
+    position: relative;
+    writing-mode: horizontal-tb;
+  }
+  .text {
+    width: 100%;
+    float: left;
+  }
+  .slides {
+    padding-bottom: 500px;
+  }
+}
